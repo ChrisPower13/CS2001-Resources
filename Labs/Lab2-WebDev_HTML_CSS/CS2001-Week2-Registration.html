@@ -14,11 +14,16 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <a href="">Home</a>
+                <a href="">Register</a>
+                <a href="">Login</a>
+                <a href="">Help</a>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="text" placeholder="Search">
             </aside>
             <section>
                 <form class="center" novalidate>
@@ -33,14 +38,35 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
-                    
-                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
-                    <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
-                    <input type="checkbox" id="seller" name="seller" value="seller">
-                    <label for="seller">I want to sell produce from my allotment.</label><br><br>
-
+                     <label for="name">Name:</label>
+                     <br>
+                    <input type="text" id="name">
                     <br><br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="text" id="email">
+                    <br><br>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="text" id="password">
+                    <br><br>
+                    <label for="password"> Re-Type Password:</label>
+                    <br>
+                    <input type="text" id="password">
+                    <br><br>
+
+                    <input type="checkbox" id="buyer" name="buyer" value="buyer">
+                    <label for="buyer">I want to buy produce directly from allotment owners.</label>
+                    <br>
+                    <input type="checkbox" id="seller" name="seller" value="seller">
+                    <label for="seller">I want to sell produce from my allotment.</label>
+                    <br><br>
+                    <input type="checkbox" id="terms of service" name="Service" value="Service">
+                    <label for="terms of service">I agree to the <a href="https://en.wikipedia.org/wiki/TOSLINK" target="_blank">Terms of Use</a> and <a href="https://www.freeprivacypolicy.com/blog/privacy-policy-url/" target="_blank">Privacy Policy</a>.</label>
+                    <br><br>
+                    <input type="button" value="Register"> <a href="https://www.sciencefocus.com/science/fun-facts" target="_blank">Learn more</a>
                 </form>
+
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
                 </div>

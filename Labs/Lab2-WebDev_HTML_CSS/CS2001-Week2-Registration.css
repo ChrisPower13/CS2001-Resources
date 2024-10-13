@@ -20,12 +20,15 @@ nav {
     border-bottom: 1px solid black;
 }
 
-ul.navlist{
+ul.navlist
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    height: 30px;
+    padding-top: 10px;
 }
 
 ul.navlist li
@@ -34,29 +37,38 @@ ul.navlist li
     display: inline;
 }
 
-ul.navlist li a {
-    display: block;
+ul.navlist a
+{
+    display: inline;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-ul.navlist li a:hover {
+ul.navlist li, a:hover {
     background-color: #111;
 }
 
 /**** Styling for main part */
 
-main {
+main 
+{
     border-bottom: 0.5rem solid;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    min-width:fit-content;
+    width: 100%;
+    min-height: fit-content;
+    height: 100%;
     /*ToDo: Make this a flexible container; 
     You can find the following helpful: display, flex-wrap, width, min-height, height
     See lecture slides*/
 }
 
-section, aside {
+section, aside 
+{
     padding: 0.5rem;
     box-sizing: border-box;
     min-height: 100%;
@@ -66,15 +78,20 @@ aside {
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
     background-color: #deded8;
+    min-width: 25%;
+    max-width: 25%;
 }
 
 section {
     /*ToDo: Set width. For fluid layouts, use min-width, max-width, and set to relative 
    values, like 75% of the page.*/
+   min-width: 75%;
+   max-width: 75%;
 }
 
 /*Styling for search in aside*/
-.search{
+.search
+{
     display: block;
     width: auto;
     text-align: left;
@@ -86,6 +103,9 @@ section {
     */
     border: 3px solid green;
     padding: 10px;
+    margin: auto;
+    width: fit-content;
+    min-width: 400px
   }
 
 /* Styling for text inputs in the form*/
@@ -96,17 +116,21 @@ section {
 }
 
 /*Styling with a media query - lecture slide 36*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) 
+{
     /* ToDo: Style aside and section so that they take 100% width on small screens*/
-    aside {
-    
+    aside 
+    {
+        width: 100%;
     }
     
-    section {
- 
+    section 
+    {
+        width: 100%;
     }
 
-    #hiddenSection{
+    #hiddenSection
+    {
         overflow-wrap: break-word;
     }
 
